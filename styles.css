@@ -1,0 +1,208 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Economica", sans-serif;
+}
+body {
+  padding: 0.3rem;
+  background-color: black;
+}
+h1 {
+  color: aliceblue;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.button-deco {
+  background-color: grey;
+  color: aliceblue;
+  padding: 1ch;
+  border: solid;
+  border-width: 0.7ch;
+  border-radius: 1.1ch;
+  text-transform: uppercase;
+}
+.links-deco {
+  padding: 17px;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: aliceblue;
+}
+/* decorated above, now I bring in the divs for flexbox positioning */
+.header-container {
+  display: flex; /*Enabling flexbox on main container from <div>*/
+  flex-wrap: wrap;
+  position: fixed; /* fixes in place */
+  z-index: 1000; /* puts it above all other elements */
+  width: 100%;
+  gap: 40px;
+  background-color: black;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 2.2ch;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* align-items: center, helped stop the buttons deforming to the overall size */
+}
+.title-item {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  border: solid white;
+}
+.logo-item {
+  display: flex;
+  /* flex: 1; */
+  padding: 1rem;
+}
+
+main {
+  padding-top: 6.7rem;
+}
+
+/* I added background image with CSS using background-image: url(""); */
+.image-concert-blue {
+  background-image: url("pyramid-stage.jpg");
+}
+
+.box-blue {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background-size: cover;
+  background-position: left;
+  height: 30rem;
+  text-transform: uppercase;
+  border-color: aqua;
+  border-style: solid;
+  border-width: 3px;
+}
+.fullnote-blue {
+  padding: 0.5rem 2rem;
+
+  background-color: rgba(208, 0, 255, 0.623);
+  border-color: antiquewhite;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+}
+
+.blue-topic {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+.blue-desc {
+  color: antiquewhite;
+  font-weight: 500;
+}
+.see-more {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  display: inline-block;
+  background-color: whitesmoke;
+  padding: 0.1rem 2rem 0.1rem 2rem;
+  /* up  right down left*/
+}
+/*  VISUAL PAGE 1 BREAK GUIDE 
+.
+.
+.
+.
+.
+END OF VISUAL PAGE BREAK GUIDE  */
+
+.image-concert-goer {
+  background-image: url("concert-goer-image.avif");
+}
+
+.box-goer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background-size: cover;
+  background-position: left;
+  height: 30rem;
+  text-transform: uppercase;
+  border-color: aqua;
+  border-style: solid;
+  border-width: 3px;
+}
+.fullnote-goer {
+  padding: 0.5rem 2rem;
+
+  background-color: rgba(208, 0, 255, 0.623);
+  border-color: antiquewhite;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+}
+
+.goer-topic {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+.goer-desc {
+  color: antiquewhite;
+  font-weight: 500;
+}
+
+/*  VISUAL PAGE 2 BREAK GUIDE 
+.
+.
+.
+.
+.
+END OF VISUAL PAGE 2 BREAK GUIDE  */
+
+.white-container {
+  background-image: url("white-background.jpg");
+}
+.whitecontainer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background-size: cover;
+  background-position: left;
+  height: 70rem;
+  text-transform: uppercase;
+  border-color: aqua;
+  border-style: solid;
+  border-width: 3px;
+}
+
+.the-conclusion {
+  position: relative;
+  display: inline-block;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
+  border-style: solid;
+  border-width: 4px;
+  border-color: bisque;
+}
+
+footer {
+  z-index: 1000;
+  color: white;
+  text-align: center;
+}
